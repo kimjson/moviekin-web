@@ -10,6 +10,11 @@ import {
   NavItem,
   NavLink,
   UncontrolledDropdown,
+  ListGroup,
+  ListGroupItem,
+  Badge,
+  Container,
+  Row,
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
@@ -70,6 +75,15 @@ export default class App extends React.Component<{}, AppState> {
             </Nav>
           </Collapse>
         </Navbar>
+        <Container>
+          <Row>
+            <ListGroup>
+              <ListGroupItem className="justify-content-between">Why Marvel sucks? <Badge pill>14 Answers</Badge></ListGroupItem>
+              <ListGroupItem className="justify-content-between">Why are art movies so good? <Badge pill>2 Answers</Badge></ListGroupItem>
+              <ListGroupItem className="justify-content-between">What is everybody's favorite movie? <Badge pill>1 Answer</Badge></ListGroupItem>
+            </ListGroup>
+          </Row>
+        </Container>
       </div>
     );
   }
