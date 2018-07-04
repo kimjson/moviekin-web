@@ -39,6 +39,10 @@ export default class App extends React.Component<{}, AppState> {
     });
   }
   render() {
+    // render list of questions
+    const containerStyle = {
+      padding: '15px'
+    }
     return (
       <div>
         <Head>
@@ -76,7 +80,7 @@ export default class App extends React.Component<{}, AppState> {
             </Nav>
           </Collapse>
         </Navbar>
-        <Container>
+        <Container style={containerStyle}>
           <Row>
             <Col>
               <ListGroup>
